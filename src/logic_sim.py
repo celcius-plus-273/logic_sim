@@ -34,7 +34,10 @@ def main():
 
     # instantiate deque to hold all the assigned wires
     wires_list = deque() # list of unassigned wires
-    
+
+    # we will also keep a list of the input wires
+    input_list = deque() # so far we don't need it...
+
     # instantiate the output list   
     output_list = deque()
 
@@ -71,7 +74,7 @@ def main():
                 vector_counter += 1
 
                 # now call the assignment function
-                assign_wire(wire_idx, new_val, wires_list)
+                assign_input_values(wire_idx, new_val, wires_list, input_list)
 
         # parse output pins
         elif (param_type == 'OUTPUT'):
@@ -98,39 +101,31 @@ def main():
         else:
             parse_input_gate(gates_list, wires_list, params, i, num_inputs=2)    
 
-    
-    # print(f'-----------------------')
-    # print(f'INITIAL GATE READY LOOP')
-    # print(f'-----------------------')
     gates_ready = deque()
     for gate_x in gates_list:
         # print(f'checking gate: {gate_x}')
-        if (gate_x.check_inputs()):
+        if (gate_x.check_input_logic()):
             # print(f'appending it to the list!')
-            gate_x.checked = True
+            gate_x.logic_done = True
             gates_ready.append(gate_x)
     
-    # print(f'--------------------')
-    # print(f'MAIN GATE READY LOOP')
-    # print(f'--------------------')
-    while (len(wires_list) > 0):
-        # go through the list of ready gates
-        while(len(gates_ready) > 0):
-            # find every gate that has it's inputs ready and compute the output 
+    while True:
+        if (len(gates_ready) <= 0):
+            break
+
+        while (len(gates_ready) > 0):
+            # pop all available gates
             curr_gate = gates_ready.popleft()
 
             # compute the new value 
-            curr_gate.compute_out() # this changes the output wire's val
-
-            # now we cna pop it from the list of unassigned wires 
-            wires_list.remove(curr_gate.out)
+            curr_gate.compute_logic() # this changes the output wire's val
 
         # find new gates that are ready now :)
         for gate_x in gates_list:
             # print(f'checking gate: {gate_x}')
-            if (gate_x.check_inputs()):
+            if (gate_x.check_input_logic()):
                 # print(f'appending it to the list!')
-                gate_x.checked = True
+                gate_x.logic_done = True
                 gates_ready.append(gate_x)   
 
     # now format the output using the assigned output wires 
