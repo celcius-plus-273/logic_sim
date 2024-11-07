@@ -44,12 +44,22 @@ def main():
 
     # now compute the statistics
     faults_detected = len(fault_list)
+    coverage = (float(faults_detected) / total_faults)
 
-    f = open(f'reports/{file_name}_faults_stats.rpt', 'w')
+    f = open(f'reports/{file_name}_faults_stats.rpt', 'a')
+    f.write('-------------------------------------------------------\n')
+    f.write(f'Results after running {num_tests} randomized test vectors\n')
+    f.write('-------------------------------------------------------\n')
     f.write(f'Total Faults Detected: {faults_detected}\n')
     f.write(f'Total Number of Faults: {total_faults}\n')
     f.write(f'Number of Tests: {num_tests}\n')
-    f.write(f'Coverage: {(float(faults_detected) / total_faults):04f}\n')
+    f.write(f'Coverage: {coverage:.04f}\n')
+    f.write('-------------------------------------------------------\n')
+    f.close()
+
+    f = open(f'reports/{file_name}_faults_stats.csv', 'a')
+    f.write(f'{num_tests},{total_faults},{faults_detected},{coverage:.04f}\n')
+    
 
 if __name__ == '__main__':
     main()

@@ -26,7 +26,8 @@ random:
 	python3 ${RANDOM_SRC} -n ${CIRCUIT_NAME} -l ${INPUT_LENGTH} -i ${NUM_RAND_TESTS}
 
 clean:
-	rm -rf src/__pycache__
-	rm -rf out.txt
 	rm -rf results/*
+
+wipe:
+	rm -rf reports/*
 	

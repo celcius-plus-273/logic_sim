@@ -17,7 +17,10 @@ input_lengths=(
     '24'
 )
 
-read -p "Number of Random Tests: " iterations
+# read -p "Number of Random Tests: " iterations
+: ${iterations:=100}
+
+echo "Running ${iterations} iterations"
 
 # RUN CLEAN
 make clean
