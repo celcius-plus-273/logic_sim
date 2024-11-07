@@ -1,4 +1,368 @@
-Total Faults Detected: 242
+-------------------------------------------------------
+Results after running 5 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 189
 Total Number of Faults: 380
 Number of Tests: 5
-Coverage: 0.636842
+Coverage: 0.4974
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 6 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 253
+Total Number of Faults: 380
+Number of Tests: 6
+Coverage: 0.6658
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 7 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 296
+Total Number of Faults: 380
+Number of Tests: 7
+Coverage: 0.7789
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 8 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 275
+Total Number of Faults: 380
+Number of Tests: 8
+Coverage: 0.7237
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 9 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 272
+Total Number of Faults: 380
+Number of Tests: 9
+Coverage: 0.7158
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 10 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 324
+Total Number of Faults: 380
+Number of Tests: 10
+Coverage: 0.8526
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 11 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 334
+Total Number of Faults: 380
+Number of Tests: 11
+Coverage: 0.8789
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 12 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 293
+Total Number of Faults: 380
+Number of Tests: 12
+Coverage: 0.7711
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 13 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 330
+Total Number of Faults: 380
+Number of Tests: 13
+Coverage: 0.8684
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 14 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 324
+Total Number of Faults: 380
+Number of Tests: 14
+Coverage: 0.8526
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 15 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 306
+Total Number of Faults: 380
+Number of Tests: 15
+Coverage: 0.8053
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 16 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 328
+Total Number of Faults: 380
+Number of Tests: 16
+Coverage: 0.8632
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 17 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 310
+Total Number of Faults: 380
+Number of Tests: 17
+Coverage: 0.8158
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 18 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 340
+Total Number of Faults: 380
+Number of Tests: 18
+Coverage: 0.8947
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 19 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 347
+Total Number of Faults: 380
+Number of Tests: 19
+Coverage: 0.9132
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 20 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 339
+Total Number of Faults: 380
+Number of Tests: 20
+Coverage: 0.8921
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 21 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 331
+Total Number of Faults: 380
+Number of Tests: 21
+Coverage: 0.8711
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 22 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 336
+Total Number of Faults: 380
+Number of Tests: 22
+Coverage: 0.8842
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 23 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 363
+Total Number of Faults: 380
+Number of Tests: 23
+Coverage: 0.9553
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 24 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 355
+Total Number of Faults: 380
+Number of Tests: 24
+Coverage: 0.9342
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 25 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 321
+Total Number of Faults: 380
+Number of Tests: 25
+Coverage: 0.8447
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 26 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 344
+Total Number of Faults: 380
+Number of Tests: 26
+Coverage: 0.9053
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 27 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 351
+Total Number of Faults: 380
+Number of Tests: 27
+Coverage: 0.9237
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 28 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 306
+Total Number of Faults: 380
+Number of Tests: 28
+Coverage: 0.8053
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 29 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 363
+Total Number of Faults: 380
+Number of Tests: 29
+Coverage: 0.9553
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 30 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 361
+Total Number of Faults: 380
+Number of Tests: 30
+Coverage: 0.9500
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 31 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 357
+Total Number of Faults: 380
+Number of Tests: 31
+Coverage: 0.9395
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 32 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 342
+Total Number of Faults: 380
+Number of Tests: 32
+Coverage: 0.9000
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 33 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 357
+Total Number of Faults: 380
+Number of Tests: 33
+Coverage: 0.9395
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 34 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 365
+Total Number of Faults: 380
+Number of Tests: 34
+Coverage: 0.9605
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 35 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 376
+Total Number of Faults: 380
+Number of Tests: 35
+Coverage: 0.9895
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 36 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 365
+Total Number of Faults: 380
+Number of Tests: 36
+Coverage: 0.9605
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 37 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 366
+Total Number of Faults: 380
+Number of Tests: 37
+Coverage: 0.9632
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 38 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 371
+Total Number of Faults: 380
+Number of Tests: 38
+Coverage: 0.9763
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 39 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 367
+Total Number of Faults: 380
+Number of Tests: 39
+Coverage: 0.9658
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 40 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 372
+Total Number of Faults: 380
+Number of Tests: 40
+Coverage: 0.9789
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 41 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 374
+Total Number of Faults: 380
+Number of Tests: 41
+Coverage: 0.9842
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 42 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 372
+Total Number of Faults: 380
+Number of Tests: 42
+Coverage: 0.9789
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 43 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 373
+Total Number of Faults: 380
+Number of Tests: 43
+Coverage: 0.9816
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 44 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 359
+Total Number of Faults: 380
+Number of Tests: 44
+Coverage: 0.9447
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 45 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 370
+Total Number of Faults: 380
+Number of Tests: 45
+Coverage: 0.9737
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 46 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 372
+Total Number of Faults: 380
+Number of Tests: 46
+Coverage: 0.9789
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 47 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 356
+Total Number of Faults: 380
+Number of Tests: 47
+Coverage: 0.9368
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 48 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 377
+Total Number of Faults: 380
+Number of Tests: 48
+Coverage: 0.9921
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 49 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 369
+Total Number of Faults: 380
+Number of Tests: 49
+Coverage: 0.9711
+-------------------------------------------------------
+-------------------------------------------------------
+Results after running 50 randomized test vectors
+-------------------------------------------------------
+Total Faults Detected: 379
+Total Number of Faults: 380
+Number of Tests: 50
+Coverage: 0.9974
+-------------------------------------------------------
