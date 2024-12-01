@@ -46,7 +46,27 @@ class gate:
             # need to validate both in_a and in_b
             return (not self.fault_done) and \
                 ((self.in_a.fault_list is not None) and (self.in_b.fault_list is not None)) 
-    
+
+    def get_input_x(self) -> wire:
+        # for NOT and BUF there is only one input that needs to be checked
+        if ((self.type == GateType.INV) or (self.type == GateType.BUF)):
+            if (self.in_a.val == -1):
+                return self.in_a
+        else:
+            if (self.in_a.val == -1):
+                return self.in_a
+            elif (self.in_b.val == -1):
+                return self.in_b
+        print(f'[PANIC]: {self} has no unassigned input')
+
+    def get_controlling_val(self) -> int:
+        if (self.type == GateType.NAND) or (self.type == GateType.AND):
+            return 0
+        elif (self.type == GateType.OR) or (self.type == GateType.NOR):
+            return 1
+        else:
+            print(f'[PANIC]: {self} is in D-frontier and has no controlling value...')
+
     def compute_logic(self):
         if (self.type == GateType.INV):
             self.out.val = int(not self.in_a.val)

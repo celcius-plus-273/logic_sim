@@ -38,27 +38,27 @@ def parse_input_gate(gates_list: deque, wires_list: deque, params, i: int, num_i
             # assign a reference of it to the new_gate input
             if (wire_x.idx == in_a):
                 new_gate.in_a = wire_x
-                # wire_x.load.append(new_gate) # attach a reference of this gate :)
+                wire_x.load.append(new_gate) # attach a reference of this gate :)
                 # print(f'{new_gate.type.name} #{i} has wire {wire_x.idx} as an input')
                 
             # assign a reference of it to the new_gate output
             if (wire_x.idx == out):
                 new_gate.out = wire_x
-                # wire_x.drive = new_gate # attach a reference of this gate :)
+                wire_x.drive = new_gate # attach a reference of this gate :)
                 # print(f'{new_gate.type.name} #{i} has wire {wire_x.idx} as an output')
 
         # if it doesn't exist, create it and assign it
         if (new_gate.in_a is None):
             new_wire = wire(in_a) # crate new wire
             new_gate.in_a = new_wire # update new_gate
-            # new_wire.load.append(new_gate) # attach a reference of this gate :)
+            new_wire.load.append(new_gate) # attach a reference of this gate :)
             # print(f'{new_gate.type.name} #{i} has wire {new_wire.idx} as an input')
             wires_list.append(new_wire)
     
         if (new_gate.out is None):
             new_wire = wire(out)
             new_gate.out = new_wire
-            # new_wire.drive = new_gate
+            new_wire.drive = new_gate
             # print(f'{new_gate.type.name} #{i} has wire {new_wire.idx} as an output')
             wires_list.append(new_wire)
 
@@ -77,45 +77,44 @@ def parse_input_gate(gates_list: deque, wires_list: deque, params, i: int, num_i
             # assign a reference of it to the new_gate input
             if (wire_x.idx == in_a):
                 new_gate.in_a = wire_x
-                # wire_x.load.append(new_gate)
+                wire_x.load.append(new_gate)
                 # print(f'{new_gate.type.name} #{i} has wire {wire_x.idx} as an input')
 
             if (wire_x.idx == in_b):
                 new_gate.in_b = wire_x
-                # wire_x.load.append(new_gate)
+                wire_x.load.append(new_gate)
                 # print(f'{new_gate.type.name} #{i} has wire {wire_x.idx} as an input')
 
             # assign a reference of it to the new_gate output
             if (wire_x.idx == out):
                 new_gate.out = wire_x
-                # wire_x.drive = new_gate
+                wire_x.drive = new_gate
                 # print(f'{new_gate.type.name} #{i} has wire {wire_x.idx} as an output')
 
         # if it doesn't exist, create it and assign it
         if (new_gate.in_a is None):
             new_wire = wire(in_a)
             new_gate.in_a = new_wire
-            # new_wire.load.append(new_gate)
+            new_wire.load.append(new_gate)
             wires_list.append(new_wire)
             # print(f'{new_gate.type.name} #{i} has wire {new_wire.idx} as an input')
 
         if (new_gate.in_b is None):
             new_wire = wire(in_b)
             new_gate.in_b = new_wire
-            # new_wire.load.append(new_gate)
+            new_wire.load.append(new_gate)
             wires_list.append(new_wire)
             # print(f'{new_gate.type.name} #{i} has wire {new_wire.idx} as an input')
    
         if (new_gate.out is None):
             new_wire = wire(out)
             new_gate.out = new_wire
-            # new_wire.drive = new_gate
+            new_wire.drive = new_gate
             wires_list.append(new_wire)
             # print(f'{new_gate.type.name} #{i} has wire {new_wire.idx} as an output')
 
         # add gate to list of gates
         gates_list.append(new_gate)
-
 
 # annotate fault lists
 def annotate_fault(wires_list: deque, fault_list: deque):

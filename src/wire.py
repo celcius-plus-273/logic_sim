@@ -3,10 +3,16 @@ from fault import fault, FaultType
 from typing import List
 
 class wire:
-    # member variables
+    # for logic simulation
     val = -1 # value on wire defaults to -1 for unassgined
+
+    # for fault simulation
     fault_list: List[fault] = None
     faults: List[bool] = [False, False]
+
+    # for PODEM test generation
+    drive = None
+    load = []
 
     def __init__(self, idx):
         self.idx = idx
